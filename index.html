@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter Benitez | Desarrollador Web & Analista de Sistemas</title>
+    <meta name="description"
+        content="Portafolio profesional de Walter Emmanuel Benitez - Desarrollador Web Full Stack, Analista de Sistemas y Project Lead. Especialista en React, Next.js, Node.js y más.">
+    <meta name="keywords"
+        content="desarrollador web, analista de sistemas, React, Next.js, Node.js, freelance, Argentina">
+    <meta name="author" content="Walter Emmanuel Benitez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;/&gt;</span>
+                <span class="logo-text">Soluciones<span class="logo-accent"> Informáticas</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#skills" class="nav-link">Tecnologías</a></li>
+                <li><a href="#education" class="nav-link">Formación</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponible para proyectos
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hola ¿Cómo estás?, soy</span>
+                <span class="hero-name">Walter<br>Benitez</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typewriter" id="typewriter"></span><span class="typewriter-cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Especialista en el desarrollo de programas modernos y escalables.
+                Experiencia trabajando el ciclo de vida completo de productos digitales,
+                desde el relevamiento hasta el despliegue optimizado.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Hablemos
+                </a>
+                <a href="#experience" class="btn btn-outline">
+                    <i class="fas fa-briefcase"></i> Ver Experiencia
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Años Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Tecnologías</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">portfolio.js</span>
+                </div>
+                <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">nombre</span>: <span class="code-string">"Walter Benitez"</span>,
+  <span class="code-prop">rol</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-prop">stack</span>: [
+    <span class="code-string">"React"</span>, <span class="code-string">"Next.js"</span>,
+    <span class="code-string">"Node.js"</span>, <span class="code-string">"Express"</span>,
+    <span class="code-string">"PHP"</span>, <span class="code-string">"MySQL"</span>
+  ],
+  <span class="code-prop">pasión</span>: <span class="code-string">"Dictar Clases</span>,
+  <span class="code-method">contactar</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"¡Hablemos!"</span>;
+  }
+};</code></pre>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Conóceme</span>
+                <h2 class="section-title">Sobre <span class="accent">Mí</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Soy <strong>Técnico Superior en Programación y Análisis de Sistemas</strong> con enfoque en
+                        gestión de proyectos tecnológicos y optimización de procesos.
+                    </p>
+                    <p>
+                        Tengo experiencia liderando el ciclo de vida de software, desde el relevamiento hasta la
+                        implementación final. Me especializo en crear aplicaciones modernas y escalables con
+                        <span class="accent">React</span>, <span class="accent">Next.js</span>,
+                        <span class="accent">Express</span>, <span class="accent">Node.js</span> y más.
+                    </p>
+                    <p>
+                        Actualmente cursando la <strong>Licenciatura en Marketing</strong> en la UNaM,
+                        complementando mi perfil técnico con una visión estratégica de negocio.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Misiones, Argentina</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>walter.emmanuel.benitez@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(54) 3765-236788</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Tec. Sup. en Prog. y Análisis de Sistemas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-code"></i></div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Aplicaciones modernas y escalables con React, Next.js y Node.js</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Gestión de Proyectos</h3>
+                        <p>Liderazgo del ciclo de vida completo de productos digitales</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3>Enseñanza</h3>
+                        <p>Profesor de programación e informática con comunicación asertiva</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Negociación</h3>
+                        <p>Traducción de necesidades de negocio en soluciones técnicas funcionales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-laptop-code"></i> Lo que hago</span>
+                <h2 class="section-title">Mis <span class="accent">Servicios</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Desarrollo Web Full Stack</h3>
+                    <p>Diseño y desarrollo de aplicaciones web completas, desde el frontend con React/Next.js hasta el
+                        backend con Node.js/Express y bases de datos MySQL.</p>
+                    <ul class="service-features">
+                        <li>Sitios web responsivos</li>
+                        <li>Aplicaciones SPA/SSR</li>
+                        <li>APIs RESTful</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-number">02</div>
+                    <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Sistemas de Gestión</h3>
+                    <p>Desarrollo de sistemas a medida para automatizar procesos de negocio, reducir tiempos
+                        administrativos y optimizar operaciones.</p>
+                    <ul class="service-features">
+                        <li>Automatización de procesos</li>
+                        <li>Control de socios y pagos</li>
+                        <li>Paneles de administración</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Consultoría y Gestión</h3>
+                    <p>Asesoramiento técnico, relevamiento de requisitos y coordinación de proyectos con metodologías
+                        ágiles (Scrum).</p>
+                    <ul class="service-features">
+                        <li>Relevamiento de requisitos</li>
+                        <li>Metodologías ágiles</li>
+                        <li>Optimización de procesos</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Clases Particulares</h3>
+                    <p>Enseñanza personalizada de programación e informática, adaptada a diversos perfiles con
+                        seguimiento individual de resultados.</p>
+                    <ul class="service-features">
+                        <li>Python, JavaScript, PHP</li>
+                        <li>HTML, CSS, React</li>
+                        <li>Bases de datos SQL</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-number">05</div>
+                    <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Servicio Técnico de Computadoras</h3>
+                    <p>Mantenimiento integral de hardware y software de tu computadora. Diagnóstico, reparación,
+                        optimización y puesta a punto para un rendimiento óptimo.</p>
+                    <ul class="service-features">
+                        <li>Diagnóstico y reparación de hardware</li>
+                        <li>Instalación y actualización de software</li>
+                        <li>Limpieza y optimización del sistema</li>
+                        <li>Backup y recuperación de datos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Portafolio</span>
+                <h2 class="section-title">Proyectos <span class="accent">Destacados</span></h2>
+                <p class="section-subtitle">Soluciones reales para clientes en Argentina, Colombia y Costa Rica</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card project-featured">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-dumbbell"></i></div>
+                        <div class="project-overlay"><span class="project-country"><i class="fas fa-map-marker-alt"></i>
+                                Argentina</span></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges"><span class="project-type">Sistema de Gestión</span><span
+                                class="project-status live"><i class="fas fa-circle"></i> En producción</span></div>
+                        <h3>Sistema para Gimnasio Multiespacio</h3>
+                        <p>Sistema integral de gestión con control de socios, pagos automatizados, seguimiento de
+                            membresías y panel administrativo completo.</p>
+                        <div class="project-tech">
+                            <span>React</span><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>Vite</span><span>JWT</span><span>Axios</span><span>Bcrypt</span>
+                        </div>
+                        <div class="project-highlights">
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Automatización de control de
+                                socios y pagos</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Autenticación segura con JWT y
+                                bcrypt</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Reducción de tiempos
+                                administrativos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-robot"></i></div>
+                        <div class="project-overlay"><span class="project-country"><i class="fas fa-map-marker-alt"></i>
+                                Colombia</span></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges"><span class="project-type">CRM + IA</span><span
+                                class="project-status live"><i class="fas fa-circle"></i> Entregado</span></div>
+                        <h3>CRM con Integración de Agentes IA</h3>
+                        <p>CRM personalizado con agentes de inteligencia artificial para automatizar gestión de
+                            clientes, seguimiento de leads y optimización comercial.</p>
+                        <div class="project-tech"><span>React</span><span>Node.js</span><span>IA /
+                                Agentes</span><span>API REST</span><span>MySQL</span></div>
+                        <div class="project-highlights">
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Agentes IA para automatización de
+                                tareas</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Gestión integral de clientes y
+                                leads</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Cliente internacional (Colombia)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-truck"></i></div>
+                        <div class="project-overlay"><span class="project-country"><i class="fas fa-map-marker-alt"></i>
+                                Costa Rica</span></div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badges"><span class="project-type">Logística</span><span
+                                class="project-status live"><i class="fas fa-circle"></i> Entregado</span></div>
+                        <h3>Sistema de Repartos con Geolocalización</h3>
+                        <p>Sistema de repartos para empresa de hielos con Google Maps y MapBox para geolocalización en
+                            tiempo real, optimización de rutas y seguimiento de entregas.</p>
+                        <div class="project-tech"><span>React</span><span>Google Maps
+                                API</span><span>MapBox</span><span>Node.js</span><span>Geolocalización</span></div>
+                        <div class="project-highlights">
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Geolocalización en tiempo real
+                                con MapBox</div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Integración con Google Maps API
+                            </div>
+                            <div class="highlight"><i class="fas fa-check-circle"></i> Cliente internacional (Costa
+                                Rica)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Trayectoria</span>
+                <h2 class="section-title">Experiencia <span class="accent">Profesional</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> Sep 2024 - Actualidad</span>
+                            <span class="timeline-badge">Project Lead</span>
+                        </div>
+                        <h3>Project Lead / Desarrollador</h3>
+                        <h4>Sistema para Gimnasio Multiespacio</h4>
+                        <ul>
+                            <li>Relevamiento, diseño y desarrollo del sistema de gestión utilizando
+                                <strong>React</strong> y <strong>Next.js</strong> para asegurar una arquitectura
+                                frontend escalable.
+                            </li>
+                            <li>Reducción de tiempos administrativos mediante la automatización del control de socios y
+                                pagos.</li>
+                            <li>Implementación de la tecnología y formación del personal para asegurar la adopción del
+                                sistema.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>Next.js</span><span>Scrum</span><span>Liderazgo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> 2025</span>
+                            <span class="timeline-badge">Internacional</span>
+                        </div>
+                        <h3>Desarrollador Full Stack</h3>
+                        <h4>CRM con Agentes IA — Cliente de Colombia</h4>
+                        <ul>
+                            <li>Desarrollo de una aplicación <strong>CRM</strong> completa con integración de
+                                <strong>agentes de inteligencia artificial</strong> para automatizar la gestión
+                                comercial.
+                            </li>
+                            <li>Diseño e implementación de flujos de trabajo inteligentes para seguimiento de leads y
+                                clientes.</li>
+                            <li>Comunicación directa con el cliente internacional para relevamiento de requisitos y
+                                entregas iterativas.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>Node.js</span><span>IA</span><span>CRM</span><span>Colombia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> 2025</span>
+                            <span class="timeline-badge">Internacional</span>
+                        </div>
+                        <h3>Desarrollador Full Stack</h3>
+                        <h4>Sistema de Repartos — Empresa de Hielos, Costa Rica</h4>
+                        <ul>
+                            <li>Desarrollo de sistema de gestión de repartos con <strong>geolocalización en tiempo
+                                    real</strong> usando <strong>Google Maps</strong> y <strong>MapBox</strong>.</li>
+                            <li>Implementación de optimización de rutas y seguimiento de entregas para la empresa
+                                fabricante de hielos.</li>
+                            <li>Integración de APIs de mapas para visualización de puntos de entrega y tracking de
+                                repartidores.</li>
+                        </ul>
+                        <div class="timeline-tags"><span>React</span><span>Google
+                                Maps</span><span>MapBox</span><span>Node.js</span><span>Costa Rica</span></div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> Feb 2025 - Actualidad</span>
+                            <span class="timeline-badge">Freelance</span>
+                        </div>
+                        <h3>Desarrollador Web Freelance</h3>
+                        <h4>Soluciones Informáticas</h4>
+                        <ul>
+                            <li><strong>Gestión de proyectos:</strong> Coordinación de ciclos de vida de productos
+                                digitales, desde el presupuesto hasta la entrega final.</li>
+                            <li><strong>Negociación:</strong> Atención directa a clientes para traducir necesidades de
+                                negocio en soluciones técnicas funcionales.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Full Stack</span><span>Freelance</span><span>Gestión</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> Sep 2024 - Feb 2025</span>
+                            <span class="timeline-badge">Pasantía</span>
+                        </div>
+                        <h3>Desarrollador Frontend</h3>
+                        <h4>FIUI - Fundación Iniciativa Urbana Inteligente</h4>
+                        <ul>
+                            <li>Implementación de metodologías ágiles de trabajo (Scrum) con entrega de avances por
+                                semana.</li>
+                            <li>Análisis, diseño e implementación de soluciones en el sistema.</li>
+                            <li>Desarrollo de interfaces modernas con <strong>React</strong>, enfocadas en experiencias
+                                de usuario claras y funcionales.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>React</span><span>Scrum</span><span>UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> Feb 2025 - Actualidad</span>
+                            <span class="timeline-badge">Educación</span>
+                        </div>
+                        <h3>Profesor de Programación e Informática</h3>
+                        <h4>Soluciones Informáticas</h4>
+                        <ul>
+                            <li><strong>Comunicación asertiva:</strong> Adaptación de conceptos complejos para diversos
+                                perfiles de alumnos.</li>
+                            <li><strong>Gestión por objetivos:</strong> Planificación de metas de aprendizaje y
+                                seguimiento de resultados individuales.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Docencia</span><span>Python</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tools"></i> Stack Tecnológico</span>
+                <h2 class="section-title">Habilidades y <span class="accent">Tecnologías</span></h2>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-react"></i><span>React JS</span></div>
+                        <div class="skill-item"><i class="fas fa-arrow-right"></i><span>Next.js</span></div>
+                        <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="fas fa-bolt"></i><span>Vite</span></div>
+                        <div class="skill-item"><i class="fas fa-exchange-alt"></i><span>Axios</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>Express JS</span></div>
+                        <div class="skill-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                        <div class="skill-item"><i class="fas fa-hashtag"></i><span>C#</span></div>
+                        <div class="skill-item"><i class="fas fa-key"></i><span>JWT</span></div>
+                        <div class="skill-item"><i class="fas fa-lock"></i><span>Bcrypt</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class="fas fa-database"></i><span>SQL Server</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-wrench"></i> Herramientas</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+                        <div class="skill-item"><i class="fab fa-trello"></i><span>Trello</span></div>
+                        <div class="skill-item"><i class="fab fa-google"></i><span>Google Meet</span></div>
+                        <div class="skill-item"><i class="fab fa-google-drive"></i><span>Google Drive</span></div>
+                        <div class="skill-item"><i class="fas fa-code"></i><span>VS Code</span></div>
+                        <div class="skill-item"><i class="fas fa-terminal"></i><span>Cursor</span></div>
+                        <div class="skill-item"><i class="fas fa-map-marked-alt"></i><span>Google Maps API</span></div>
+                        <div class="skill-item"><i class="fas fa-map"></i><span>MapBox</span></div>
+                        <div class="skill-item"><i class="fas fa-robot"></i><span>Agentes IA</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-users"></i><span>Gestión de Equipos</span></div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i><span>Gestión de Proyectos</span></div>
+                        <div class="skill-item"><i class="fas fa-handshake"></i><span>Negociación</span></div>
+                        <div class="skill-item"><i class="fas fa-search"></i><span>Relevamiento</span></div>
+                        <div class="skill-item"><i class="fas fa-rocket"></i><span>Optimización</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Formación</span>
+                <h2 class="section-title">Formación <span class="accent">Académica</span></h2>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-year">2022 - 2024</div>
+                    <div class="edu-info">
+                        <h3>Tec. Superior en Programación y Análisis de Sistemas de Computación</h3>
+                        <h4><i class="fas fa-university"></i> Normal Superior N°10</h4>
+                        <p>Formación integral en desarrollo de software, análisis de sistemas, bases de datos y gestión
+                            de proyectos tecnológicos.</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2025 - Act.</div>
+                    <div class="edu-info">
+                        <h3>Licenciatura en Marketing</h3>
+                        <h4><i class="fas fa-university"></i> UNaM - Universidad Nacional de Misiones</h4>
+                        <p>Complementando el perfil técnico con visión estratégica de negocio, marketing digital y
+                            gestión comercial.</p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2017 - 2021</div>
+                    <div class="edu-info">
+                        <h3>Bachiller en Informática</h3>
+                        <h4><i class="fas fa-school"></i> CEP N° 4</h4>
+                        <p>Diploma de Bachiller con orientación en Informática. Bases sólidas en lógica de programación
+                            y sistemas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contacto</span>
+                <h2 class="section-title">Trabajemos <span class="accent">Juntos</span></h2>
+                <p class="section-subtitle">¿Tenés un proyecto en mente? ¡Me encantaría escucharte!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:walter.emmanuel.benitez@gmail.com">walter.emmanuel.benitez@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/543765236788" target="_blank">(54) 3765-236788</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <span>Misiones, Argentina</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/" target="_blank" class="social-link" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" class="social-link" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/543765236788" target="_blank" class="social-link"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="mailto:walter.emmanuel.benitez@gmail.com" class="social-link" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="formName" name="name" placeholder=" " required>
+                        <label for="formName">Nombre completo</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" name="email" placeholder=" " required>
+                        <label for="formEmail">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="formSubject" name="subject" placeholder=" ">
+                        <label for="formSubject">Asunto</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMessage" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="formMessage">Tu mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;/&gt;</span>
+                    <span>Soluciones <span class="accent">Informáticas</span></span>
+                </div>
+                <p class="footer-text">Trabajando siempre con modestia porque un cliente más, es un aprendizaje más.</p>
+                <div class="footer-divider"></div>
+                <p class="footer-copy">&copy; 2025 Walter Benitez & Soluciones Informáticas. Todos los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
